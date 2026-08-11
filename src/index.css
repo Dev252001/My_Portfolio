@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-bg text-text font-body;
+    min-width: 360px;
+  }
+
+  :focus-visible {
+    outline: 2px solid #E8622C;
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+
+  ::selection {
+    background-color: rgba(232, 98, 44, 0.3);
+    color: #F2F0EB;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0B0E14;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1E2533;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E8622C;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply font-display text-2xl sm:text-3xl font-bold text-text mb-2;
+  }
+
+  .section-label {
+    @apply font-mono text-xs tracking-widest uppercase text-accent mb-3 block;
+  }
+
+  .card {
+    @apply bg-surface border border-border rounded-xl p-5 sm:p-6
+           transition-all duration-300 ease-out;
+  }
+
+  .card:hover {
+    @apply border-accent/40;
+    transform: translateY(-3px);
+    box-shadow: 0 0 0 1px rgba(232, 98, 44, 0.2), 0 8px 32px rgba(0,0,0,0.4);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5
+           bg-accent text-white font-display font-semibold text-sm rounded-lg
+           transition-all duration-200 ease-out
+           hover:bg-accentDim focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 px-5 py-2.5
+           border border-border text-text font-display font-semibold text-sm rounded-lg
+           transition-all duration-200 ease-out
+           hover:border-accent/60 hover:text-accent focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg;
+  }
+
+  .tag {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-md
+           bg-surfaceHigh border border-border
+           font-mono text-xs text-muted;
+  }
+}
