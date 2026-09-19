@@ -40,7 +40,7 @@ const achievements = [
   {
     title: 'Smart India Hackathon (SIH)',
     detail: 'Qualified Pre-Qualifier Round',
-    year: '2024',
+    year: '2025',
   },
 ]
 
