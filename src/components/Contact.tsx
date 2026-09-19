@@ -38,8 +38,7 @@ export default function Contact() {
             Let's talk
           </motion.h2>
           <motion.p variants={fadeUpVariant} className="text-muted text-base mb-12 max-w-md">
-            Open to internships, collaborations, and MS AI/ML opportunities.
-            Reach out via any channel.
+            Got a project, internship, or just want to talk AI? My inbox is open.
           </motion.p>
 
           <div className="grid lg:grid-cols-2 gap-10">

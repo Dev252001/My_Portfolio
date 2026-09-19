@@ -7,15 +7,19 @@ interface Line {
 }
 
 const LINES: Line[] = [
-  { text: '$ python monitor.py --source webcam', delay: 0, color: 'muted' },
-  { text: 'Initializing MediaPipe Face Mesh... [468 landmarks]', delay: 600, color: 'muted' },
-  { text: 'Loading drowsiness detection model...', delay: 1100, color: 'default' },
-  { text: 'Frame 142 — EAR: 0.31 — Status: ALERT', delay: 1600, color: 'default' },
-  { text: 'Frame 143 — EAR: 0.28 — Status: ALERT', delay: 2000, color: 'default' },
-  { text: 'Frame 144 — EAR: 0.19 — Status: DROWSY ⚠', delay: 2400, color: 'green' },
-  { text: '', delay: 2750, color: 'default' },
-  { text: '>>> detector.predict(frame)', delay: 2900, color: 'accent' },
-  { text: "{'state': 'drowsy', 'ear': 0.19, 'alert': True}", delay: 3400, color: 'green' },
+  { text: '$ whoami', delay: 0, color: 'muted' },
+  { text: '> Devashish Pandey — AI/ML Engineer', delay: 500, color: 'accent' },
+  { text: '', delay: 900, color: 'default' },
+  { text: '$ ls projects/', delay: 1050, color: 'muted' },
+  { text: '  ecoground/   study-buddy/   learnify/', delay: 1500, color: 'default' },
+  { text: '  driver-monitor/   ham10000/   spam-clf/', delay: 1850, color: 'default' },
+  { text: '', delay: 2150, color: 'default' },
+  { text: '$ python train.py --model efficientnet-b0', delay: 2300, color: 'muted' },
+  { text: 'Epoch 10/10 — loss: 0.21 — macro_f1: 0.7715', delay: 2850, color: 'default' },
+  { text: 'Best model saved. melanoma_recall: 0.8323 ✓', delay: 3300, color: 'green' },
+  { text: '', delay: 3600, color: 'default' },
+  { text: '$ status', delay: 3750, color: 'muted' },
+  { text: '> open to internships. ready to build.', delay: 4150, color: 'accent' },
 ]
 
 export default function TerminalHero() {

@@ -63,7 +63,7 @@ export default function Hero() {
               animate="visible"
               className="section-label mb-6 inline-block"
             >
-              Open to Internships &amp; MS AI/ML Programs
+              Available for Internships · Open to Collaborations
             </motion.span>
 
             {/* Staggered word reveal on heading */}
@@ -102,7 +102,7 @@ export default function Hero() {
               transition={{ delay: 0.48 }}
               className="text-muted text-base sm:text-lg leading-relaxed max-w-md mx-auto lg:mx-0 mb-8"
             >
-              BCA @ Galgotias University · Building real-world AI, Computer Vision &amp; Full Stack projects — one commit at a time.
+              BCA student at Galgotias University. I build AI systems that actually work — computer vision, RAG pipelines, full-stack apps.
             </motion.p>
 
             <motion.div
