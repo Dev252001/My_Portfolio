@@ -77,6 +77,22 @@ export default function About() {
                   BCA student at Galgotias University (CGPA 8.59, 2024–2027), focused on building explainable, defensible AI and computer vision systems rather than black-box demos. Currently working through a structured ML roadmap covering classical ML fundamentals through deep learning, alongside full-stack AI application development. Targeting MSc AI/ML programs in France for Fall 2027, with particular interest in applied ML and social media analytics.
                 </p>
               </div>
+
+              {/* GitHub Stats */}
+              <div className="flex flex-col gap-2 pt-1">
+                <img
+                  src="https://github-readme-stats.vercel.app/api?username=Dev252001&show_icons=true&hide_border=true&bg_color=12161F&title_color=E8622C&icon_color=E8622C&text_color=8892A4&rank_icon=github"
+                  alt="Devashish's GitHub stats"
+                  className="w-full rounded-xl"
+                  loading="lazy"
+                />
+                <img
+                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dev252001&layout=compact&hide_border=true&bg_color=12161F&title_color=E8622C&text_color=8892A4&langs_count=6"
+                  alt="Most used languages"
+                  className="w-full rounded-xl"
+                  loading="lazy"
+                />
+              </div>
             </motion.div>
 
             {/* Highlight cards */}

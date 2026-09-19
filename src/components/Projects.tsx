@@ -94,7 +94,7 @@ export default function Projects() {
             Things I've built
           </motion.h2>
           <motion.p variants={fadeUpVariant} className="text-muted text-base mb-12 max-w-xl">
-            Real-world AI and full-stack projects — built to solve actual problems.
+            7 real-world AI and full-stack projects — built to solve actual problems.
           </motion.p>
 
           <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5">
