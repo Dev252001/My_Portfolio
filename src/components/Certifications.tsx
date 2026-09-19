@@ -1,12 +1,23 @@
 import { motion } from 'framer-motion'
+import { ExternalLink } from 'lucide-react'
 import { fadeUpVariant, containerVariant } from '../lib/motion'
 
 interface Certification {
   title: string
   issuer: string
+  verify?: string
 }
 
 const certifications: Certification[] = [
+  {
+    title: 'Artificial Intelligence Fundamentals',
+    issuer: 'IBM SkillsBuild',
+    verify: 'https://www.credly.com/badges/620ec1fc-df63-4f7f-8013-5ad6027ad976',
+  },
+  {
+    title: 'Edunet — Artificial Intelligence',
+    issuer: 'IBM SkillsBuild',
+  },
   {
     title: 'Database Programming with SQL',
     issuer: 'Oracle Academy × Galgotias University',
@@ -42,16 +53,39 @@ export default function Certifications() {
           <motion.span variants={fadeUpVariant} className="section-label">
             Certifications
           </motion.span>
-          <motion.h2 variants={fadeUpVariant} className="section-heading mb-6">
+          <motion.h2 variants={fadeUpVariant} className="section-heading mb-3">
             Credentials
           </motion.h2>
+          <motion.p variants={fadeUpVariant} className="text-muted text-base mb-12 max-w-xl">
+            Courses and certifications completed across AI, development, and computer science.
+          </motion.p>
 
-          <div className="flex flex-wrap items-center gap-x-8 gap-y-2 text-sm text-muted">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {certifications.map((cert) => (
-              <div key={cert.title} className="flex items-center gap-2">
-                <span className="font-display font-semibold text-text">{cert.title}</span>
-                <span className="font-mono text-xs text-muted/80">— {cert.issuer}</span>
-              </div>
+              <motion.div
+                key={cert.title}
+                variants={fadeUpVariant}
+                className="card group flex flex-col gap-3"
+              >
+                <div className="flex-1">
+                  <p className="font-display font-semibold text-sm text-text leading-snug mb-1">
+                    {cert.title}
+                  </p>
+                  <p className="font-mono text-xs text-accent">{cert.issuer}</p>
+                </div>
+                {cert.verify && (
+                  <a
+                    href={cert.verify}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-muted hover:text-text text-xs font-mono transition-colors mt-auto"
+                    aria-label={`Verify ${cert.title} certificate`}
+                  >
+                    <ExternalLink size={12} aria-hidden="true" />
+                    Verify credential
+                  </a>
+                )}
+              </motion.div>
             ))}
           </div>
         </motion.div>

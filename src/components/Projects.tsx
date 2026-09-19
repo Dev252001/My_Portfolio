@@ -15,6 +15,22 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'EcoGround — BioBlitz (SIH)',
+    description:
+      'Gamified environmental education platform built for Smart India Hackathon. Users earn XP, badges, and avatar upgrades by completing eco challenges, quizzes, and collaborative green missions. Features a habit tracker with streaks, eco leaderboard, course modules, a shop, and JWT-based auth — all built with Next.js 15, Prisma, and PostgreSQL.',
+    tags: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Tailwind CSS', 'ShadCN UI', 'SIH'],
+    github: 'https://github.com/Dev252001/ecoground',
+    accent: 'from-green-500/10 to-transparent',
+  },
+  {
+    title: 'Study Buddy AI',
+    description:
+      'Full-stack AI study platform where you upload PDFs, DOCX, PPTX, and notes then chat with them via RAG. Auto-generates quizzes (MCQ, True/False, Fill-in-the-blank), flashcards with spaced repetition, multi-style summaries, semantic search, and a study analytics dashboard. Supports Groq, OpenAI GPT-4o, IBM Granite, Llama 3, and Mistral — one env var to switch. Deployed via Docker Compose with Nginx, GitHub Actions CI/CD.',
+    tags: ['React', 'TypeScript', 'FastAPI', 'RAG', 'LangChain', 'ChromaDB', 'Redis', 'PostgreSQL', 'Docker', 'Groq'],
+    github: 'https://github.com/Dev252001/ai-study-buddy',
+    accent: 'from-amber-500/10 to-transparent',
+  },
+  {
     title: 'Learnify',
     description:
       'Full-stack Retrieval-Augmented Generation app that lets students upload course PDFs and query them conversationally. FastAPI backend with semantic chunking, ChromaDB vector store, Redis caching layer, and a React/TypeScript frontend.',
@@ -26,18 +42,34 @@ const projects: Project[] = [
   {
     title: 'AI-Based Smart Driver Monitoring System',
     description:
-      'Real-time AI driver monitoring using OpenCV and MediaPipe — runs on standard webcam input with 468-point facial landmark tracking (MediaPipe Face Mesh). EAR threshold tuned at 0.2 for drowsy-state classification. Detects drowsiness, head movement, gaze direction, and inattentiveness. Modular architecture covering detection, state management, fatigue scoring, logging, and audio alerts.',
-    tags: ['Python', 'OpenCV', 'MediaPipe', 'NumPy', 'Computer Vision', 'Real-time'],
-    github: 'https://github.com/Dev252001/driver-monitoring',
+      'Real-time driver monitoring system using OpenCV and MediaPipe Face Mesh. Detects drowsiness via Eye Aspect Ratio (EAR), tracks gaze direction (left/right/center), head-down posture, and inattentive behaviour. Features fatigue scoring, blink counting, CSV event logging, priority-based audio alerts (Pygame), user-specific calibration, and a real-time FPS dashboard.',
+    tags: ['Python', 'OpenCV', 'MediaPipe', 'NumPy', 'Pygame', 'Computer Vision', 'Real-time'],
+    github: 'https://github.com/Dev252001/AI-Based-Smart-Driver-Monitoring-System',
     accent: 'from-emerald-500/10 to-transparent',
+  },
+  {
+    title: 'Spam Email Classifier',
+    description:
+      'NLP pipeline that classifies SMS/email messages as spam or ham using TF-IDF vectorization (5,000 features, unigrams + bigrams) and two classifiers — Logistic Regression vs Naive Bayes. Naive Bayes selected as final model: accuracy 96.81%, spam precision 0.99, F1 0.857. Includes text cleaning, stratified 80/20 split, confusion matrix plots, and a Streamlit web app for live predictions.',
+    tags: ['Python', 'Scikit-learn', 'TF-IDF', 'NLP', 'Naive Bayes', 'Streamlit', 'Pandas', 'Matplotlib'],
+    github: 'https://github.com/Dev252001/Spam-Classifier',
+    accent: 'from-red-500/10 to-transparent',
+  },
+  {
+    title: 'Library Management System',
+    description:
+      'Offline admin tool for a self-study library serving ~40 students at subsidized rates. Dashboard with 5 live KPI cards (copies, issued, overdue, fines), book catalogue with search/filter, issue/return workflow with auto fine calculation (₹2/day, capped at ₹50), student profiles with borrow history, and an analytics page with Matplotlib charts embedded as base64 PNGs.',
+    tags: ['Python', 'Flask', 'SQLite', 'Bootstrap 5', 'Matplotlib', 'Jinja2'],
+    github: 'https://github.com/Dev252001/Library-Management-System',
+    accent: 'from-orange-500/10 to-transparent',
   },
   {
     title: 'HAM10000 Skin Lesion Classifier',
     description:
-      'Deep learning classifier for dermatoscopic image classification across 7 skin lesion categories using the HAM10000 dataset. Focus on per-class F1 handling for severe class imbalance.',
-    tags: ['Python', 'PyTorch/TensorFlow', 'CNN', 'Computer Vision', 'Medical Imaging'],
+      'Dermoscopic image classifier on 10,015 images across 7 skin lesion classes (58:1 imbalance). Progresses from a from-scratch baseline CNN to fine-tuned ResNet18 and EfficientNet-B0, with class-weighted loss, per-class F1 tracking, and Grad-CAM interpretability. Best model: EfficientNet-B0 — macro-F1 0.7715, melanoma recall 0.8323, accuracy 79.44%.',
+    tags: ['Python', 'PyTorch', 'EfficientNet', 'ResNet18', 'Grad-CAM', 'CNN', 'Computer Vision', 'Google Colab'],
+    github: 'https://github.com/Dev252001/HAM10000',
     accent: 'from-sky-500/10 to-transparent',
-    inProgress: true,
   },
 ]
 
@@ -65,7 +97,7 @@ export default function Projects() {
             Real-world AI and full-stack projects — built to solve actual problems.
           </motion.p>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5">
             {projects.map((project) => (
               <ProjectCard key={project.title} project={project} />
             ))}

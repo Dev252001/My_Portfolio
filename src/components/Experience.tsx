@@ -16,12 +16,12 @@ const experiences: Experience[] = [
     role: 'Artificial Intelligence Intern',
     company: 'Edunet Foundation × AICTE',
     location: 'Remote',
-    period: 'Jul 2026 – Aug 2026 · Current',
+    period: 'Jul 2026 – Aug 2026',
     bullets: [
       'Selected for the AICTE-backed Edunet Foundation SkillsBuild AI internship program.',
-      'Working independently on a real-world AI project under mentor guidance via the IBM SkillsBuild platform.',
-      'Developing skills in AI, machine learning, and practical project delivery across a structured 6-week program.',
-      'Certification from AICTE and Edunet Foundation on completion.',
+      'Worked independently on a real-world AI project under mentor guidance via the IBM SkillsBuild platform.',
+      'Developed skills in AI, machine learning, and practical project delivery across a structured 6-week program.',
+      'Received certification from AICTE and Edunet Foundation on completion.',
     ],
   },
   {

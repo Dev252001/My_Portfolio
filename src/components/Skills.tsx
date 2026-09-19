@@ -9,19 +9,19 @@ interface SkillGroup {
 const skillGroups: SkillGroup[] = [
   {
     label: 'Languages',
-    skills: ['Python', 'JavaScript', 'C/C++', 'SQL', 'HTML/CSS'],
+    skills: ['Python', 'TypeScript', 'JavaScript', 'C/C++', 'SQL', 'HTML/CSS'],
   },
   {
     label: 'ML / AI',
-    skills: ['OpenCV', 'MediaPipe', 'Pandas', 'NumPy', 'Flask', 'Machine Learning Basics'],
+    skills: ['PyTorch', 'Scikit-learn', 'OpenCV', 'MediaPipe', 'LangChain', 'RAG', 'Grad-CAM', 'Pandas', 'NumPy', 'Streamlit'],
   },
   {
     label: 'Frontend & Backend',
-    skills: ['React', 'FastAPI', 'Bootstrap', 'MySQL'],
+    skills: ['React', 'Next.js', 'FastAPI', 'Flask', 'Prisma', 'PostgreSQL', 'Redis', 'ChromaDB', 'MySQL'],
   },
   {
-    label: 'Tools',
-    skills: ['Git', 'GitHub', 'VS Code', 'Jupyter', 'Docker', 'Linux'],
+    label: 'Tools & Platforms',
+    skills: ['Git', 'GitHub', 'Docker', 'Linux', 'Jupyter', 'Google Colab', 'VS Code', 'Vercel'],
   },
 ]
 
