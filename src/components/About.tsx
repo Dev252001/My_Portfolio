@@ -81,16 +81,18 @@ export default function About() {
               {/* GitHub Stats */}
               <div className="flex flex-col gap-2 pt-1">
                 <img
-                  src="https://github-readme-stats.vercel.app/api?username=Dev252001&show_icons=true&hide_border=true&bg_color=12161F&title_color=E8622C&icon_color=E8622C&text_color=8892A4&rank_icon=github"
+                  src="https://github-readme-stats.vercel.app/api?username=Dev252001&show_icons=true&hide_border=true&bg_color=12161F&title_color=E8622C&icon_color=E8622C&text_color=8892A4&rank_icon=github&cache_seconds=86400"
                   alt="Devashish's GitHub stats"
                   className="w-full rounded-xl"
                   loading="lazy"
+                  onError={(e) => { e.currentTarget.style.display = 'none' }}
                 />
                 <img
-                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dev252001&layout=compact&hide_border=true&bg_color=12161F&title_color=E8622C&text_color=8892A4&langs_count=6"
+                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dev252001&layout=compact&hide_border=true&bg_color=12161F&title_color=E8622C&text_color=8892A4&langs_count=6&cache_seconds=86400"
                   alt="Most used languages"
                   className="w-full rounded-xl"
                   loading="lazy"
+                  onError={(e) => { e.currentTarget.style.display = 'none' }}
                 />
               </div>
             </motion.div>
