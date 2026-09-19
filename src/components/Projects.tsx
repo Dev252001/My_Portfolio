@@ -36,7 +36,6 @@ const projects: Project[] = [
       'Full-stack Retrieval-Augmented Generation app that lets students upload course PDFs and query them conversationally. FastAPI backend with semantic chunking, ChromaDB vector store, Redis caching layer, and a React/TypeScript frontend.',
     tags: ['React', 'TypeScript', 'FastAPI', 'RAG', 'ChromaDB', 'Redis', 'Docker', 'PostgreSQL'],
     github: 'https://github.com/Dev252001/learnify',
-    demo: 'https://learnify-demo.example.com',
     accent: 'from-sky-500/10 to-transparent',
   },
   {
