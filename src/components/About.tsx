@@ -74,7 +74,7 @@ export default function About() {
 
               <div className="space-y-4 text-base leading-relaxed">
                 <p className="text-text/90">
-                  BCA student at Galgotias University (CGPA 8.59, 2024–2027), focused on building explainable, defensible AI and computer vision systems rather than black-box demos. Currently working through a structured ML roadmap covering classical ML fundamentals through deep learning, alongside full-stack AI application development. Targeting MSc AI/ML programs in France for Fall 2027, with particular interest in applied ML and social media analytics.
+                  Building practical AI systems and learning how to turn machine learning concepts into real-world applications.
                 </p>
               </div>
 
