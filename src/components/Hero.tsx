@@ -39,7 +39,7 @@ export default function Hero() {
         aria-hidden="true"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(30, 37, 51, 0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(30, 37, 51, 0.5) 1px, transparent 1px)',
+            'linear-gradient(rgba(0, 212, 255, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 212, 255, 0.04) 1px, transparent 1px)',
           backgroundSize: '48px 48px',
         }}
       />
@@ -49,7 +49,7 @@ export default function Hero() {
         aria-hidden="true"
         style={{
           background:
-            'radial-gradient(ellipse 70% 60% at 50% 50%, transparent 40%, #0B0E14 100%)',
+            'radial-gradient(ellipse 70% 60% at 50% 50%, transparent 40%, #070B14 100%)',
         }}
       />
 
